@@ -6,10 +6,10 @@ public class SecondApproach {
 	{
 		if (start> end)
 			return -1;
-		int  mid_index = (start + end)/2;
+		int  mid_index = (start + (end-start)/2);
 	
 		if   (mid_index == array[mid_index])
-			return mid_index;
+			 return mid_index;
 		if (mid_index > array[mid_index] )
 			return findtheIndex(array, ( mid_index +1),  end );
 		else return  findtheIndex(array, start,  (mid_index-1));
